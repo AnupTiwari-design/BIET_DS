@@ -1,0 +1,21 @@
+interface Vehicle {
+    void start();  // abstract method
+
+    default void fuelType() {
+        System.out.println("Petrol or Diesel");
+    }
+}
+
+class Car implements Vehicle {
+    public void start() {
+        System.out.println("Car started");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Car c = new Car();
+        c.start();        // Output: Car started
+        c.fuelType();     // Output: Petrol or Diesel (from default method)
+    }
+}
