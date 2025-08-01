@@ -1,0 +1,7 @@
+try {
+    // Code that may throw an exception
+} catch (ExceptionType e) {
+    // Code to handle the exception
+} finally {
+    // Optional: Code that always executes (even if exception occurs)
+}
