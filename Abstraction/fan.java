@@ -7,4 +7,4 @@ abstract class fan {
     public void display() {
         System.out.println("operation of fan");
     }
-}
+}    c  
